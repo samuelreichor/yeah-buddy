@@ -1,29 +1,30 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import FooterNav from "@/components/FooterNav";
+import { Stack } from "expo-router";
+import React from 'react';
+import {StyleSheet, StatusBar} from 'react-native';
+import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
 
-import { useColorScheme } from '@/hooks/useColorScheme';
+const App = () => (
+  <SafeAreaProvider>
+    <SafeAreaView style={styles.container} edges={['top']}>
+      <Stack screenOptions={{ headerShown: false }}/>
+      <FooterNav/>
+    </SafeAreaView>
+  </SafeAreaProvider>
+);
 
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: StatusBar.currentHeight,
+  },
+  scrollView: {
+    backgroundColor: 'pink',
+  },
+  text: {
+    fontSize: 42,
+    padding: 12,
+  },
+});
 
-  if (!loaded) {
-    // Async font loading only occurs in development.
-    return null;
-  }
-
-  return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
-  );
-}
+export default App;
