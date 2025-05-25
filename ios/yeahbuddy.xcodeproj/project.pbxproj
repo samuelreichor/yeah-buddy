@@ -8,25 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		211C49780D0CEFF9750AC983 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 78A0D03418F4D8391302AA0B /* PrivacyInfo.xcprivacy */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		AAC763041CA71EF7A9430E36 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741FC20F3D76E8659D9DA65A /* ExpoModulesProvider.swift */; };
+		662EA2E049E0F65C8ABFF892 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E73A35A5B05177FA8CB627 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		E741CA84C906EB39B431D9FB /* libPods-yeahbuddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C9666ACBB0798B128CE804 /* libPods-yeahbuddy.a */; };
-		EC7C85F3A718D5110CF9B7EA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DA677F49EC37FF6EEA52B1B5 /* PrivacyInfo.xcprivacy */; };
+		C1BD71E93EA4664C916B7FB8 /* libPods-yeahbuddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2586AA1060346CEF93437BB /* libPods-yeahbuddy.a */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A29C2DC040A28C50E9EAEB0 /* Pods-yeahbuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeahbuddy.debug.xcconfig"; path = "Target Support Files/Pods-yeahbuddy/Pods-yeahbuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* yeahbuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yeahbuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = yeahbuddy/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = yeahbuddy/Info.plist; sourceTree = "<group>"; };
-		17C9666ACBB0798B128CE804 /* libPods-yeahbuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yeahbuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		741FC20F3D76E8659D9DA65A /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-yeahbuddy/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		A6781161F2A64830790DDDE6 /* Pods-yeahbuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeahbuddy.release.xcconfig"; path = "Target Support Files/Pods-yeahbuddy/Pods-yeahbuddy.release.xcconfig"; sourceTree = "<group>"; };
+		32E73A35A5B05177FA8CB627 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-yeahbuddy/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		6D74722E02C16DE9B28456A0 /* Pods-yeahbuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeahbuddy.release.xcconfig"; path = "Target Support Files/Pods-yeahbuddy/Pods-yeahbuddy.release.xcconfig"; sourceTree = "<group>"; };
+		78A0D03418F4D8391302AA0B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = yeahbuddy/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = yeahbuddy/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		DA677F49EC37FF6EEA52B1B5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = yeahbuddy/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C15DFAB86D5E1F416882726A /* Pods-yeahbuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeahbuddy.debug.xcconfig"; path = "Target Support Files/Pods-yeahbuddy/Pods-yeahbuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		C2586AA1060346CEF93437BB /* libPods-yeahbuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yeahbuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = yeahbuddy/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* yeahbuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "yeahbuddy-Bridging-Header.h"; path = "yeahbuddy/yeahbuddy-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E741CA84C906EB39B431D9FB /* libPods-yeahbuddy.a in Frameworks */,
+				C1BD71E93EA4664C916B7FB8 /* libPods-yeahbuddy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,26 +53,16 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				DA677F49EC37FF6EEA52B1B5 /* PrivacyInfo.xcprivacy */,
+				78A0D03418F4D8391302AA0B /* PrivacyInfo.xcprivacy */,
 			);
 			name = yeahbuddy;
-			sourceTree = "<group>";
-		};
-		2812DAA7B07E987A42DC4465 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0A29C2DC040A28C50E9EAEB0 /* Pods-yeahbuddy.debug.xcconfig */,
-				A6781161F2A64830790DDDE6 /* Pods-yeahbuddy.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				17C9666ACBB0798B128CE804 /* libPods-yeahbuddy.a */,
+				C2586AA1060346CEF93437BB /* libPods-yeahbuddy.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,8 +81,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				2812DAA7B07E987A42DC4465 /* Pods */,
-				DB09D3C9AFFE91D811D4CDA6 /* ExpoModulesProviders */,
+				DD70BBFA024AB2C12FB7AF58 /* Pods */,
+				EA00FB6F0427DE08E80EDB3D /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -116,20 +106,30 @@
 			path = yeahbuddy/Supporting;
 			sourceTree = "<group>";
 		};
-		DB09D3C9AFFE91D811D4CDA6 /* ExpoModulesProviders */ = {
+		D3746C130A2EB8E3BCC44FD5 /* yeahbuddy */ = {
 			isa = PBXGroup;
 			children = (
-				E257BFB8BADBCCAA050D1C32 /* yeahbuddy */,
-			);
-			name = ExpoModulesProviders;
-			sourceTree = "<group>";
-		};
-		E257BFB8BADBCCAA050D1C32 /* yeahbuddy */ = {
-			isa = PBXGroup;
-			children = (
-				741FC20F3D76E8659D9DA65A /* ExpoModulesProvider.swift */,
+				32E73A35A5B05177FA8CB627 /* ExpoModulesProvider.swift */,
 			);
 			name = yeahbuddy;
+			sourceTree = "<group>";
+		};
+		DD70BBFA024AB2C12FB7AF58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C15DFAB86D5E1F416882726A /* Pods-yeahbuddy.debug.xcconfig */,
+				6D74722E02C16DE9B28456A0 /* Pods-yeahbuddy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA00FB6F0427DE08E80EDB3D /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				D3746C130A2EB8E3BCC44FD5 /* yeahbuddy */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,13 +140,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "yeahbuddy" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				1C4999A74CF80CE3694D0C2E /* [Expo] Configure project */,
+				2418EA34D5A32A4AE6D31CF3 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				A890073C824A9792942303B0 /* [CP] Embed Pods Frameworks */,
+				C1985A6CDCB7B3B9A85EAD07 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,7 +196,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				EC7C85F3A718D5110CF9B7EA /* PrivacyInfo.xcprivacy in Resources */,
+				211C49780D0CEFF9750AC983 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +240,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1C4999A74CF80CE3694D0C2E /* [Expo] Configure project */ = {
+		2418EA34D5A32A4AE6D31CF3 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -271,6 +271,7 @@
 				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoSystemUI/ExpoSystemUI_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly/RCT-Folly_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNSVG/RNSVGFilters.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React-Core_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/React-cxxreact_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle",
@@ -286,6 +287,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoSystemUI_privacy.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCT-Folly_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNSVGFilters.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-Core_privacy.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-cxxreact_privacy.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SDWebImage.bundle",
@@ -299,7 +301,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yeahbuddy/Pods-yeahbuddy-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A890073C824A9792942303B0 /* [CP] Embed Pods Frameworks */ = {
+		C1985A6CDCB7B3B9A85EAD07 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,7 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				AAC763041CA71EF7A9430E36 /* ExpoModulesProvider.swift in Sources */,
+				662EA2E049E0F65C8ABFF892 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +336,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A29C2DC040A28C50E9EAEB0 /* Pods-yeahbuddy.debug.xcconfig */;
+			baseConfigurationReference = C15DFAB86D5E1F416882726A /* Pods-yeahbuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -370,7 +372,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6781161F2A64830790DDDE6 /* Pods-yeahbuddy.release.xcconfig */;
+			baseConfigurationReference = 6D74722E02C16DE9B28456A0 /* Pods-yeahbuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

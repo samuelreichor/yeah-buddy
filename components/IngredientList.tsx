@@ -3,18 +3,14 @@ import React, { useEffect, useState } from 'react';
 import { View, TouchableOpacity,  Text, FlatList, StyleSheet, ActivityIndicator } from 'react-native';
 import { useSQLiteContext } from 'expo-sqlite';
 import { useRouter } from 'expo-router'
-import SearchBarWithButton from '@/components/SearchBarWithButton';
+import IngredientCard from './IngredientCard';
+import { Ingredient } from '@/types/base';
 
-type Ingredient = {
-  id: number;
-  title: string;
-  kcal: number;
-  proteins: number;
-  carbohydrates: number;
-  fat: number;
-};
-
-export default function IngredientList() {
+type IngredientListProp = {
+  onCardPress: (item: Ingredient) => void;
+  cardVariant?: 'withBtn' | 'default'
+}
+export default function IngredientList({onCardPress, cardVariant = 'default'}: IngredientListProp) {
   const router = useRouter();
   const db = useSQLiteContext();
   const [ingredients, setIngredients] = useState<Ingredient[]>([]);
@@ -23,7 +19,10 @@ export default function IngredientList() {
   useEffect(() => {
     const load = async () => {
       try {
-        const rows =  await db.getAllAsync('SELECT * FROM MealSummaries;');
+        const rows = await db.getAllAsync<Ingredient>(`
+          SELECT id, title, kcal, proteins, carbohydrates, fat
+          FROM Ingredients;
+        `);
         setIngredients(rows);
       } catch (err) {
         console.error('Error loading ingredients:', err);
@@ -45,27 +44,21 @@ export default function IngredientList() {
   if (ingredients.length === 0) {
     return (
       <View style={styles.center}>
-        <TouchableOpacity onPress={ () => router.push(`/meals/1`)}>
-          <Text>Add new</Text>
-        </TouchableOpacity>
-        <Text>No Meals found, start by adding some.</Text>
+        <Text>No Ingredients found, start by adding some.</Text>
       </View>
     );
   }
 
   return (
     <>
-    <SearchBarWithButton placeholder='Search for meals' onPress={() => router.push('/meals/new')} onChangeText={(text) => console.log(text)}/>
-    <FlatList
-      contentContainerStyle={styles.list}
-      data={ingredients}
-      keyExtractor={(item) => item.id.toString()}
-      renderItem={({ item }) => (
-        <TouchableOpacity style={styles.item} onPress={() => router.push(`/meals/${item.id}`)}>
-          <Text style={styles.title}>{JSON.stringify(item)}</Text>
-        </TouchableOpacity>
-      )}
-    />
+      <FlatList
+        contentContainerStyle={styles.list}
+        data={ingredients}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (
+          <IngredientCard item={item} onPress={onCardPress} variant={cardVariant}/>
+        )}
+      />
     </>
   );
 }
@@ -80,7 +73,7 @@ const styles = StyleSheet.create({
     padding: 0,
   },
   item: {
-    marginBottom: 12,
+    marginBottom: 8,
     padding: 12,
     borderWidth: 1,
     borderColor: '#ddd',
